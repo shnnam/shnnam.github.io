@@ -1,12 +1,24 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    {% include /research_head.html %}
-    <body>
-        <div id="wrapper">
-            <section>
-                {{ content }}
-            </section>
-            {% include /research_footer.html %}
-		</div>
-	</body>
+
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+        <div class="research">
+
+            <article>
+              {{ content }}
+            </article>
+          
+          </div>
+    </div>
+
+  </body>
+
 </html>

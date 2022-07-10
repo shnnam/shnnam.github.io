@@ -6,8 +6,21 @@ title:  Neural Image Representations for Multi-Image Fusion and Layer Separation
 Neural Image Representations<br />for Multi-Image Fusion and Layer Separation
 ================================
 <div style="text-align: center">
-<a href="http://snam.ml" target="_blank">Seonghyeon Nam</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mbrubake.github.io/" target="_blank">Marcus A. Brubaker</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cse.yorku.ca/~mbrown" target="_blank">Michael S. Brown</a><br />
+<a href="https://shnnam.github.io" target="_blank">Seonghyeon Nam</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mbrubake.github.io/" target="_blank">Marcus A. Brubaker</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cse.yorku.ca/~mbrown" target="_blank">Michael S. Brown</a><br />
 York University
+</div>
+
+<div class="link-icon" style="text-align: center">
+<table style="width:30%; margin-left: auto; margin-right: auto; margin-top: 1.0rem;">
+<tr>
+  <th style="width:50%; text-align:center;"><a href="https://arxiv.org/abs/2108.01199" target="_blank" title="Paper"><i class="ai ai-arxiv ai-3x"></i></a></th>
+  <th style="width:50%; text-align:center;"><a href="https://github.com/shnnam/nir" target="_blank" title="Code"><i class="fab fa-github ai-3x"></i></a></th>
+</tr>
+<tr>
+  <th style="width:50%; text-align:center;">Paper</th>
+  <th style="width:50%; text-align:center;">Code</th>
+</tr>
+</table>
 </div>
 
 
@@ -18,25 +31,25 @@ We propose a framework for aligning and fusing multiple images into a single vie
 
 Overview - Neural Image Representations (NIRs) for Multi-Image Fusion
 ------------------------  
-<div style="text-align: center"><img src="{{ site.url }}/research/img/nir/overview_fusion.png" width="80%" alt="overview of multi-image fusion" /></div>
+<div style="text-align: center"><img src="{{ site.url }}/research/img/nir/overview_fusion.png" width="90%" alt="overview of multi-image fusion" /></div>
 **Figure 1.** Illustration of our neural image representations (NIRs). Assuming that the MLP <i>f</i> learns a canonical view where all burst images are fused, we render each image by projecting the canonical view to the frame-specific view, which is achieved by transforming the input coordinates fed into the <i>f</i>. We estimate the transform using another MLP <i>g</i>. According to different assumptions of the world, we formulate our framework differently; we formulate the transform of coordinates using (a) homography, (b) optical flow without occlusion/disocclusion, and (c) optical flow with occlusion/disocclusion.
 
 
 Visualization of Canonical View
 ------------------------  
 <div style="text-align: center">
-<video width="25%" autoplay loop muted>
+<video width="27%" autoplay loop muted>
   <source src="{{ site.url }}/research/img/nir/results/vis/vis.mp4" type="video/mp4">
 </video>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img width="50%" src="{{ site.url }}/research/img/nir/results/vis/canview.png" />
+<img width="55%" src="{{ site.url }}/research/img/nir/results/vis/canview.png" />
 </div>
 **Figure 2.** Visualization of learned canonical view. We capture 9 consecutive images (left), and fit a homography-based neural representation to them. As can be seen, our method automatically stitches all the images in the canonical view (right) learned in the neural representation.
 
 
 Overview - Multi-Image Layer Separation
 ------------------------  
-<div style="text-align: center"><img src="{{ site.url }}/research/img/nir/overview_lseparation.png" width="40%" alt="overview of multi-image layer separation" /></div>
+<div style="text-align: center"><img src="{{ site.url }}/research/img/nir/overview_lseparation.png" width="60%" alt="overview of multi-image layer separation" /></div>
 **Figure 3.** Overview of our two-stream NIRs for multi-image layer separation. The goal of our method is to separate the underlying scene and interference moving differently in images into two layers stored in a different NIR. To this end, we simultaneously train two NIRs. <i>f</i><sup>1</sup> is parameterized by our homography or flow-based NIRs so as to learn the underlying scene moving according to the explicit motion model. In contrast, the interference layer that is difficult to be modelled by the motion model is stored in <i>f</i><sup>2</sup>. The generic form of image formation is a linear combination of both networks, but varies according to tasks. We also use a few regularizations for optimization, which are described in detail in the paper.
 
 
@@ -209,4 +222,3 @@ Publications
 * **Neural Image Representations for Multi-Image Fusion and Layer Separation**<br />
 Seonghyeon Nam, Marcus A. Brubaker, Michael S. Brown<br />
 *Proc. European Conference on Computer Vision (ECCV) 2022*<br />
-[\[arXiv\]](https://arxiv.org/abs/2108.01199)
