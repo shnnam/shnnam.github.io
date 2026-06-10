@@ -16,7 +16,7 @@ news: true
 social: true
 ---
 
-I am a **Research Scientist** at [**Meta**](https://about.facebook.com/meta){:target="\_blank"} (formerly known as **Facebook**). My research spans **Computer Vision**, **Machine Learning**, and **Generative AI**. In particular, my work at Meta is focused on research and engineering of image/video generation models, post-training foundation models, 3D/4D view synthesis, on-device ML models for image/video processing.
+I am a **Research Scientist** at [**Meta**](https://about.facebook.com/meta){:target="\_blank"}. My research spans **Computer Vision**, **Machine Learning**, and **Generative AI**. In particular, my work at Meta is focused on research and engineering of image/video generation models, post-training foundation models, 3D/4D view synthesis, on-device ML models for image/video processing.
 
 Before joining Meta, I was a post-doctoral fellow at [**York University**](https://www.yorku.ca){:target="\_blank"} supervised by Prof. [**Michael S. Brown**](http://www.cse.yorku.ca/~mbrown){:target="\_blank"}. I obtained my Ph.D degree in **Computer Science** at [**Yonsei University**](https://www.yonsei.ac.kr){:target="\_blank"} under the supervision of Prof. [**Seon Joo Kim**](https://sites.google.com/site/seonjookim){:target="\_blank"}.
 
