@@ -1,6 +1,0 @@
----
-layout: post
-date:   2024-03-06
-inline: true
----
-Our pape **Geometry Transfer for Stylizing Radiance Fields** is accepted to **CVPR 2024**.

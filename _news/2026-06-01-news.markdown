@@ -1,6 +1,0 @@
----
-layout: post
-date:   2026-06-01
-inline: true
----
-Our paper **LaVR: Latent Space Conditioned Video Re-rendering using Large 4D Reconstruction Models** is accepted to **CVPR 2026**.
