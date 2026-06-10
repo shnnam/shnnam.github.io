@@ -1,0 +1,6 @@
+--
+layout: post
+date:   2026-01-06
+inline: true
+---
+One paper is accepted to **CVPR 2026**.
